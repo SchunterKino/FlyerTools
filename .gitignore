@@ -1,0 +1,5 @@
+# All folders
+*/
+
+# Except this one
+!Vorlagen/

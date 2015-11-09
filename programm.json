@@ -1,0 +1,107 @@
+{
+    "Programm": {
+        "Semester": "Wintersemester 2015",
+        "Beginn":"20:30 Uhr",
+        "Eintritt":"3,00€",
+        "Filmpass":"2,00€",
+        "Vorlage":"Vorlagen/wochen_flyer.svg",
+        "Filme": [
+            {
+                "Titel":"Margos Spuren",
+                "Termine":["05.11.15","10.11.15"],
+                "Jahr":"2015",
+                "Genre":"Abenteuer, Romanze",
+                "Regie": "Jake Schreier",
+                "Laenge": "113 Minuten",
+                "Dateien": {
+                    "Ordner":"Ablage/Margos Spuren",
+                    "Poster":"Plakatmotiv/MargosSpuren_Poster_SundL_A4.jpg",
+                    "Text":"Synopsis/kurztext.txt",
+                    "Screenshot1":"Bilder/DF-05969rv2_A4.jpg",
+                    "Screenshot2":"Bilder/DF-11873_A4.jpg",
+                    "Screenshot3":"Bilder/DF-06898r_A4.jpg"
+                }
+            },
+            {
+                "Titel":"Minions",
+                "Termine":["12.11.15","17.11.15"],
+                "Jahr":"2015",
+                "Genre":"Animation, Komödie",
+                "Regie": "Pierre Coffin, Kyle Balda",
+                "Laenge": "91 Minuten",
+                "Dateien": {
+                    "Ordner":"Ablage/Minions",
+                    "Poster":"Plakatmotiv/MINIONS_Hauptplakat_A4_A4.jpg",
+                    "Text":"Kurzinhalt/kurztext.txt",
+                    "Screenshot1":"Bilder/VFs-Minions1_A4.jpg",
+                    "Screenshot2":"Bilder/VFs-Minions2_A4.jpg",
+                    "Screenshot3":"Bilder/VFs-Minions4_A4.jpg"
+                }
+            },
+            {
+                "Titel":"Self/less: Der Fremde in mir",
+                "Termine":["19.11.15", "24.11.15"],
+                "Jahr":"2015",
+                "Genre":"Sci-Fi , Thriller",
+                "Regie": "Tarsem Singh",
+                "Laenge": "117 Minuten",
+                "Dateien": {
+                    "Ordner":"Ablage/Selfless",
+                    "Poster":"Plakatmotiv/COC_EL_5111_Plakat_SPS1_300dpi.jpg",
+                    "Text":"kurztext.txt",
+                    "Screenshot1":"Bilder/S_11859_R_CROP1427741313_A4.jpg",
+                    "Screenshot2":"Bilder/S_09872_CROP1427741298_A4.jpg",
+                    "Screenshot3":"Bilder/S_11335_R_kl_A4.jpg"
+                }
+            },
+            {
+                "Titel":"Fack ju Göhte 2",
+                "Termine":["26.11.15", "01.12.15"],
+                "Jahr":"2015",
+                "Genre":"Komödie",
+                "Regie": "Bora Dağtekin",
+                "Laenge": "115 Minuten",
+                "Dateien": {
+                    "Ordner":"Ablage/Fack ju Goethe 2",
+                    "Poster":"Plakatmotiv/Fack_Ju_Goehte_Hauptplakat__A4.jpg",
+                    "Text":"kurztext.txt",
+                    "Screenshot1":"Bilder/_1CA3559_A4.jpg",
+                    "Screenshot2":"Bilder/6CA_0605_02_A4.jpg",
+                    "Screenshot3":"Bilder/_5CA7980_02_crop_A4.jpg"
+                }
+            },
+            {
+                "Titel":"Der Marsianer - Rettet Mark Watney",
+                "Termine":["03.12.15", "08.12.15"],
+                "Jahr":"2015",
+                "Genre":"Sci-Fi",
+                "Regie": "Ridley Scott",
+                "Laenge": "144 Minuten",
+                "Dateien": {
+                    "Ordner":"Ablage/Der Marsianer",
+                    "Poster":"Plakatmotiv/DerMarsianer-RettetMarkWatney_Poster_CampD_SundL_A4.jpg",
+                    "Text":"Synopsis/kurztext.txt",
+                    "Screenshot1":"Bilder/DF-03074_A4.jpg",
+                    "Screenshot2":"Bilder/DF-05310_A4.jpg",
+                    "Screenshot3":"Bilder/TIF_RSS_0009_fr_n_left_1001_A4.jpg"
+                }
+            },
+            {
+                "Titel":"Pan",
+                "Termine":["10.12.15", "15.12.15"],
+                "Jahr":"2015",
+                "Genre":"Fantasy, Action",
+                "Regie": "Joe Wright",
+                "Laenge": "111 Minuten",
+                "Dateien": {
+                    "Ordner":"Ablage/Pan",
+                    "Poster":"pan.jpg",
+                    "Text":"kurztext.txt",
+                    "Screenshot1":"screen1.jpg",
+                    "Screenshot2":"screen2.jpg",
+                    "Screenshot3":"screen3.jpg"
+                }
+            }
+        ]
+    }
+}
