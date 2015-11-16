@@ -134,9 +134,13 @@ def compress(image_path):
     image = Image.open(image_path)
     image.thumbnail((1024,1024), Image.ANTIALIAS)
 
+    # use rgb
+    if image.mode is not "RGB":
+        image = image.convert("RGB")
+
     # store in temporary memory file
     temp_file = StringIO()
-    image.save(temp_file, 'JPEG', omptimize=True, quality=90)
+    image.save(temp_file, 'JPEG', optimize=True, quality=90)
 
     # rewind and return image content as string
     temp_file.seek(0)
