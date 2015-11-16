@@ -101,6 +101,118 @@
                     "Screenshot2":"screen2.jpg",
                     "Screenshot3":"screen3.jpg"
                 }
+            },
+            {
+                "Titel":"The Rocky Horror Picture Show",
+                "Termine":["17.12.15"],
+                "Jahr":"1975",
+                "Genre":"Comedy, Musical",
+                "Regie": "Jim Sharman",
+                "Laenge": "100 Minuten",
+                "Dateien": {
+                    "Ordner":"Ablage/Rocky Horror Picture Show",
+                    "Poster":"rockyhorrorpictureshow.jpg",
+                    "Text":"kurztext.txt",
+                    "Screenshot1":"screen1.png",
+                    "Screenshot2":"screen2.jpg",
+                    "Screenshot3":"screen3.jpg"
+                }
+            },
+            {
+                "Titel":"Trash",
+                "Termine":["07.01.16", "12.01.16"],
+                "Jahr":"2014",
+                "Genre":"Abenteuer, Komödie, Drama",
+                "Regie": "Stephen Daldry, Christian Duurvoort",
+                "Laenge": "114 Minuten",
+                "Dateien": {
+                    "Ordner":"Ablage/Trash",
+                    "Poster":"trash-filmplakat.jpg",
+                    "Text":"kurztext.txt",
+                    "Screenshot1":"screen1.jpg",
+                    "Screenshot2":"screen2.jpg",
+                    "Screenshot3":"screen3.jpg"
+                }
+            },
+            {
+                "Titel":"James Bond - Spectre (OV)",
+                "Termine":["14.01.16", "19.01.16"],
+                "Jahr":"2015",
+                "Genre":"Action, Adventure, Thriller",
+                "Regie": "Sam Mendes",
+                "Laenge": "150 Minutes",
+                "Dateien": {
+                    "Ordner":"Ablage/Spectre",
+                    "Poster":"Plakatmotiv/SPEC_Hauptplakat_SKULL__A3 300dpi_RZ__A4.jpg",
+                    "Text":"Kurzinhalt/kurztext_englisch.txt",
+                    "Screenshot1":"Bilder/spectre-intl-FIRST-LOOK_rgb_A4.jpg",
+                    "Screenshot2":"Bilder/B24_22176_A4.jpg",
+                    "Screenshot3":"Bilder/B24_09880_r_rgb_A4.jpg"
+                }
+            },
+            {
+                "Titel":"True Story - Spiel um Macht",
+                "Termine":["21.01.16", "26.01.16"],
+                "Jahr":"2015",
+                "Genre":"Thriller",
+                "Regie": "Rupert Goold",
+                "Laenge": "99 Minuten",
+                "Dateien": {
+                    "Ordner":"Ablage/TRUE STORY - SPIEL UM MACHT",
+                    "Poster":"Plakatmotiv/TrueStory_Poster_SundL_A4.jpg",
+                    "Text":"Synopsis/kurztext.txt",
+                    "Screenshot1":"Bilder/046_DF-02689_A4.jpg",
+                    "Screenshot2":"Bilder/108_DF-04176_R_A4.jpg",
+                    "Screenshot3":"Bilder/DF-04026_org.jpg"
+                }
+            },
+            {
+                "Titel":"Die Tribute von Panem – Mockingjay Teil 2",
+                "Termine":["28.01.16", "02.02.16"],
+                "Jahr":"2015",
+                "Genre":"Abenteuer, Sci-Fi",
+                "Regie": "Francis Lawrence",
+                "Laenge": "137 Minuten",
+                "Dateien": {
+                    "Ordner":"Ablage/Panem 4",
+                    "Poster":"poster.jpg",
+                    "Text":"kurztext.txt",
+                    "Screenshot1":"screen1.png",
+                    "Screenshot2":"screen2.jpg",
+                    "Screenshot3":"screen3.png"
+                }
+            },
+            {
+                "Titel":"Man lernt nie aus",
+                "Termine":["04.02.16", "09.02.16"],
+                "Jahr":"2015",
+                "Genre":"Komödie",
+                "Regie": "Nancy Meyers",
+                "Laenge": "121 Minuten",
+                "Dateien": {
+                    "Ordner":"Ablage/Man lernt nie aus",
+                    "Poster":"poster_lg01.jpg",
+                    "Text":"kurztext.txt",
+                    "Screenshot1":"screen1.jpg",
+                    "Screenshot2":"screen2.jpg",
+                    "Screenshot3":"screen3.jpg"
+                }
+            },
+            {
+                "Titel":"Alles steht Kopf",
+                "Termine":["11.02.16", "16.02.16"],
+                "Jahr":"2015",
+                "Genre":"Animation, Komödie",
+                "Regie": "Pete Docter",
+                "Laenge": "95 Minuten",
+                "Dateien": {
+                    "Ordner":"Ablage/Alles steht Kopf",
+                    "Poster":"Hauptplakat.jpg",
+                    "Text":"text/kurztext.txt",
+                    "Screenshot1":"screens/Inside-Out-First-Look-RGB-d150_20mpub.pub16.101.jpg",
+                    "Screenshot2":"screens/inside-out-194827_1_d105_223pub_pub16_293_R1_CMYK.jpg",
+                    "Screenshot3":"screens/Inside-Out-CMYK-194252_1_d250_82cQpub2_pub16_207_R1.jpg_rgb.jpg"
+                }
             }
         ]
     }
