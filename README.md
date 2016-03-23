@@ -1,3 +1,3 @@
 # Flyer Tools
 
-Generate SVG flyers with python using inkscape effects.
+Generate SVG flyers by transforming a template.

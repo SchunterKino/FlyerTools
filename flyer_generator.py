@@ -1,15 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-import sys
+import os
+import re
+
+# parameters
 import argparse
 import json
-import re
-import os
 
 # dates
 import locale
-locale.setlocale(locale.LC_ALL, 'de_DE.UTF-8')
 import dateutil.parser
 
 # image encoding and compression
@@ -17,29 +17,42 @@ import base64
 from PIL import Image
 from cStringIO import StringIO
 
-# inkscape/svg
-# TODO pure xml parser without inkscape dependency?
-sys.path.append('/usr/share/inkscape/extensions')
-import inkex # inkscape effects
+# xml parser
+from lxml import etree
+
+locale.setlocale(locale.LC_ALL, 'de_DE.UTF-8')
 
 
-class FlyerEffect(inkex.Effect):
+class FlyerTransformation(object):
 
-    def __init__(self, program, movie, next_movies, output_folder):
-        inkex.Effect.__init__(self)
-        self.program= program
+    def __init__(self, program, movie, next_movies):
+        self.program = program
         self.movie = movie
         self.next_movies = next_movies
-        self.output_folder = output_folder
 
-    def effect(self):
+    def parse(self, file):
+        stream = open(file, 'r')
+        self.document = etree.parse(stream)
+        stream.close()
+
+    def getElementById(self, id):
+        path = '//*[@id="%s"]' % id
+        el_list = self.document.xpath(path)
+        if el_list:
+            return el_list[0]
+        else:
+            return None
+
+    def apply(self, template):
+        self.parse(template)
+
         # title
         title = self.movie['Titel']
         self.getElementById('titel').text = title
 
         # text
         folder = self.movie['Dateien']['Ordner']
-        textfile_path = os.path.join(folder, self.movie['Dateien']['Text']);
+        textfile_path = os.path.join(folder, self.movie['Dateien']['Text'])
         with open(textfile_path) as text_file:
             text = text_file.read().decode('utf-8')
         self.getElementById('kurztext').text = text
@@ -106,7 +119,7 @@ class FlyerEffect(inkex.Effect):
                     next_dates.append(short_date)
                 next_dates = ' + '.join(next_dates)
                 next_title = next_movie['Titel']
-                next_poster = os.path.join(next_movie['Dateien']['Ordner'], next_movie['Dateien']['Poster']);
+                next_poster = os.path.join(next_movie['Dateien']['Ordner'], next_movie['Dateien']['Poster'])
                 next_poster_element.set('{http://www.w3.org/1999/xlink}href', encode_image(next_poster))
             self.getElementById('folgeDatum' + str(element_id)).text = next_dates
             self.getElementById('folgeTitel' + str(element_id)).text = next_title
@@ -115,10 +128,7 @@ class FlyerEffect(inkex.Effect):
             # remove next movies title ("Bald im SchunterKino")
             self.getElementById('vorschauTitel').text = ''
 
-        # save to file
-        path = title_to_filepath(title, self.output_folder)
-        with open(path, 'w') as output_file:
-            self.document.write(output_file)
+        return self.document
 
 
 def encode_image(image_path):
@@ -132,7 +142,7 @@ def encode_image(image_path):
 def compress(image_path):
     # fixed resolution
     image = Image.open(image_path)
-    image.thumbnail((1024,1024), Image.ANTIALIAS)
+    image.thumbnail((1024, 1024), Image.ANTIALIAS)
 
     # use rgb
     if image.mode is not "RGB":
@@ -153,21 +163,21 @@ def title_to_filepath(titel, output_folder):
     return os.path.join(output_folder, filename + '.svg')
 
 
-if __name__ == '__main__':
-    # parse args
+def parse_args():
     parser = argparse.ArgumentParser()
     # TODO Print version?
-    # TODO Program
-    #parser.add_argument('-p', '--program', help='Programm Flyer erstellen', action='store_true')
+    # TODO Generate (compressed) PDFs?
+    # TODO Program Flyer
+    # parser.add_argument('-p', '--program', help='Programm Flyer erstellen', action='store_true')
     parser.add_argument('-f', '--force', help='Bestehende Flyer überschreiben', action='store_true')
     parser.add_argument('-o', '--output', help='Ausgabe Ordner', action='store', default='woechentliche Flyer')
     parser.add_argument('Datei', type=argparse.FileType('r'), help='JSON Datei mit dem aktuellen Programm')
-    args = parser.parse_args()
+    return parser.parse_args()
 
-    # load json file
+
+if __name__ == '__main__':
+    args = parse_args()
     program = json.load(args.Datei)['Programm']
-
-    # templates
     template = program['Vorlage']
 
     # generate flyers
@@ -190,6 +200,9 @@ if __name__ == '__main__':
 
         # generate
         print 'Generiere Flyer:\t' + filepath
-        # TODO Create only 1 Effect, with parameters in affect() instead of constructor?
-        flyer_effect = FlyerEffect(program, movie, next_movies, args.output)
-        flyer_effect.affect(args=[template], output=False)
+        transformation = FlyerTransformation(program, movie, next_movies)
+        document = transformation.apply(template)
+
+        # save to file
+        with open(filepath, 'w') as output_file:
+            document.write(output_file)
