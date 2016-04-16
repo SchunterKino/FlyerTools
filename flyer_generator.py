@@ -190,7 +190,7 @@ if __name__ == '__main__':
 
         # Skip existing flyers
         if not args.force and os.path.isfile(filepath):
-            print 'Flyer existiert bereits:\t' + filepath
+            print 'Flyer existiert bereits:\t' + os.path.basename(filepath)
             continue
 
         # collect next 3 movies (or None) for preview
