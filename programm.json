@@ -1,217 +1,216 @@
 {
     "Programm": {
-        "Semester": "Wintersemester 2015",
+        "Semester": "Sommersemester 2016",
         "Beginn":"20:30 Uhr",
         "Eintritt":"3,00€",
         "Filmpass":"2,00€",
-        "Vorlage":"Vorlagen/wochen_flyer.svg",
         "Filme": [
             {
-                "Titel":"Margos Spuren",
-                "Termine":["05.11.15","10.11.15"],
+                "Titel":"Das brandneue Testament",
+                "Termine":["07.04.16","12.04.16"],
                 "Jahr":"2015",
-                "Genre":"Abenteuer, Romanze",
-                "Regie": "Jake Schreier",
+                "Genre":"Komödie",
+                "Regie": "Jaco van Dormael",
                 "Laenge": "113 Minuten",
                 "Dateien": {
-                    "Ordner":"Ablage/Margos Spuren",
-                    "Poster":"Plakatmotiv/MargosSpuren_Poster_SundL_A4.jpg",
-                    "Text":"Synopsis/kurztext.txt",
-                    "Screenshot1":"Bilder/DF-05969rv2_A4.jpg",
-                    "Screenshot2":"Bilder/DF-11873_A4.jpg",
-                    "Screenshot3":"Bilder/DF-06898r_A4.jpg"
+                    "Ordner":"Ablage/brandneuetestament",
+                    "Poster":"brandneuetestament.jpg",
+                    "Text":"inhalt.txt",
+                    "Screenshot1":"bild13.jpg",
+                    "Screenshot2":"bild9.jpg",
+                    "Screenshot3":"bild1.jpg"
                 }
             },
             {
-                "Titel":"Minions",
-                "Termine":["12.11.15","17.11.15"],
+                "Titel":"Star Wars - Das Erwachen der Macht",
+                "Termine":["14.04.16","19.04.16"],
                 "Jahr":"2015",
-                "Genre":"Animation, Komödie",
-                "Regie": "Pierre Coffin, Kyle Balda",
-                "Laenge": "91 Minuten",
+                "Genre":"Abenteuer, Action, Sci-Fi",
+                "Regie": "J.J. Abrams",
+                "Laenge": "135 Minuten",
                 "Dateien": {
-                    "Ordner":"Ablage/Minions",
-                    "Poster":"Plakatmotiv/MINIONS_Hauptplakat_A4_A4.jpg",
-                    "Text":"Kurzinhalt/kurztext.txt",
-                    "Screenshot1":"Bilder/VFs-Minions1_A4.jpg",
-                    "Screenshot2":"Bilder/VFs-Minions2_A4.jpg",
-                    "Screenshot3":"Bilder/VFs-Minions4_A4.jpg"
+                    "Ordner":"Ablage/starwars7",
+                    "Poster":"SWTFA_deutsches_Filmplakat_A1_02_rz_4c_300dpi_10mb.jpg",
+                    "Text":"crawler.txt",
+                    "Screenshot1":"bilder/des0190.4k_PUB_STILL_PNT.1080.2.jpg",
+                    "Screenshot2":"bilder/des0135.PUB.ana.final.1267.jpg",
+                    "Screenshot3":"bilder/x1149_tea0030_PUB_no_CAM_MB_16int.3.upres.jpg"
                 }
             },
             {
-                "Titel":"Self/less: Der Fremde in mir",
-                "Termine":["19.11.15", "24.11.15"],
-                "Jahr":"2015",
-                "Genre":"Sci-Fi , Thriller",
-                "Regie": "Tarsem Singh",
-                "Laenge": "117 Minuten",
-                "Dateien": {
-                    "Ordner":"Ablage/Selfless",
-                    "Poster":"Plakatmotiv/COC_EL_5111_Plakat_SPS1_300dpi.jpg",
-                    "Text":"kurztext.txt",
-                    "Screenshot1":"Bilder/S_11859_R_CROP1427741313_A4.jpg",
-                    "Screenshot2":"Bilder/S_09872_CROP1427741298_A4.jpg",
-                    "Screenshot3":"Bilder/S_11335_R_kl_A4.jpg"
-                }
-            },
-            {
-                "Titel":"Fack ju Göhte 2",
-                "Termine":["26.11.15", "01.12.15"],
-                "Jahr":"2015",
-                "Genre":"Komödie",
-                "Regie": "Bora Dağtekin",
-                "Laenge": "115 Minuten",
-                "Dateien": {
-                    "Ordner":"Ablage/Fack ju Goethe 2",
-                    "Poster":"Plakatmotiv/Fack_Ju_Goehte_Hauptplakat__A4.jpg",
-                    "Text":"kurztext.txt",
-                    "Screenshot1":"Bilder/_1CA3559_A4.jpg",
-                    "Screenshot2":"Bilder/6CA_0605_02_A4.jpg",
-                    "Screenshot3":"Bilder/_5CA7980_02_crop_A4.jpg"
-                }
-            },
-            {
-                "Titel":"Der Marsianer - Rettet Mark Watney",
-                "Termine":["03.12.15", "08.12.15"],
-                "Jahr":"2015",
-                "Genre":"Sci-Fi",
-                "Regie": "Ridley Scott",
-                "Laenge": "144 Minuten",
-                "Dateien": {
-                    "Ordner":"Ablage/Der Marsianer",
-                    "Poster":"Plakatmotiv/DerMarsianer-RettetMarkWatney_Poster_CampD_SundL_A4.jpg",
-                    "Text":"Synopsis/kurztext.txt",
-                    "Screenshot1":"Bilder/DF-03074_A4.jpg",
-                    "Screenshot2":"Bilder/DF-05310_A4.jpg",
-                    "Screenshot3":"Bilder/TIF_RSS_0009_fr_n_left_1001_A4.jpg"
-                }
-            },
-            {
-                "Titel":"Pan",
-                "Termine":["10.12.15", "15.12.15"],
-                "Jahr":"2015",
-                "Genre":"Fantasy, Action",
-                "Regie": "Joe Wright",
-                "Laenge": "111 Minuten",
-                "Dateien": {
-                    "Ordner":"Ablage/Pan",
-                    "Poster":"pan.jpg",
-                    "Text":"kurztext.txt",
-                    "Screenshot1":"screen1.jpg",
-                    "Screenshot2":"screen2.jpg",
-                    "Screenshot3":"screen3.jpg"
-                }
-            },
-            {
-                "Titel":"The Rocky Horror Picture Show",
-                "Termine":["17.12.15"],
-                "Jahr":"1975",
-                "Genre":"Comedy, Musical",
-                "Regie": "Jim Sharman",
-                "Laenge": "100 Minuten",
-                "Dateien": {
-                    "Ordner":"Ablage/Rocky Horror Picture Show",
-                    "Poster":"rockyhorrorpictureshow.jpg",
-                    "Text":"kurztext.txt",
-                    "Screenshot1":"screen1.png",
-                    "Screenshot2":"screen2.jpg",
-                    "Screenshot3":"screen3.jpg"
-                }
-            },
-            {
-                "Titel":"Trash",
-                "Termine":["07.01.16", "12.01.16"],
-                "Jahr":"2014",
-                "Genre":"Abenteuer, Komödie, Drama",
-                "Regie": "Stephen Daldry, Christian Duurvoort",
-                "Laenge": "114 Minuten",
-                "Dateien": {
-                    "Ordner":"Ablage/Trash",
-                    "Poster":"trash-filmplakat.jpg",
-                    "Text":"kurztext.txt",
-                    "Screenshot1":"screen1.jpg",
-                    "Screenshot2":"screen2.jpg",
-                    "Screenshot3":"screen3.jpg"
-                }
-            },
-            {
-                "Titel":"James Bond - Spectre (OV)",
-                "Termine":["14.01.16", "19.01.16"],
-                "Jahr":"2015",
-                "Genre":"Action, Adventure, Thriller",
-                "Regie": "Sam Mendes",
-                "Laenge": "150 Minutes",
-                "Dateien": {
-                    "Ordner":"Ablage/Spectre",
-                    "Poster":"Plakatmotiv/SPEC_Hauptplakat_SKULL__A3 300dpi_RZ__A4.jpg",
-                    "Text":"Kurzinhalt/kurztext_englisch.txt",
-                    "Screenshot1":"Bilder/spectre-intl-FIRST-LOOK_rgb_A4.jpg",
-                    "Screenshot2":"Bilder/B24_22176_A4.jpg",
-                    "Screenshot3":"Bilder/B24_09880_r_rgb_A4.jpg"
-                }
-            },
-            {
-                "Titel":"True Story - Spiel um Macht",
-                "Termine":["21.01.16", "26.01.16"],
+                "Titel":"Bridge of Spies - Der Unterhändler",
+                "Termine":["21.04.16", "26.04.16"],
                 "Jahr":"2015",
                 "Genre":"Thriller",
-                "Regie": "Rupert Goold",
-                "Laenge": "99 Minuten",
+                "Regie": "Steven Spielberg",
+                "Laenge": "132 Minuten",
                 "Dateien": {
-                    "Ordner":"Ablage/TRUE STORY - SPIEL UM MACHT",
-                    "Poster":"Plakatmotiv/TrueStory_Poster_SundL_A4.jpg",
+                    "Ordner":"Ablage/bridgeofspies",
+                    "Poster":"Plakatmotiv/BridgeOfSpies_Poster_SundL_A4.jpg",
                     "Text":"Synopsis/kurztext.txt",
-                    "Screenshot1":"Bilder/046_DF-02689_A4.jpg",
-                    "Screenshot2":"Bilder/108_DF-04176_R_A4.jpg",
-                    "Screenshot3":"Bilder/DF-04026_org.jpg"
+                    "Screenshot1":"Bilder/SJP_JB_D28_04450R _A4.jpg",
+                    "Screenshot2":"Bilder/SJP_JB_D29_04609_A4.jpg",
+                    "Screenshot3":"Bilder/SJP_JB_D44_07030 _A4.jpg"
                 }
             },
             {
-                "Titel":"Die Tribute von Panem – Mockingjay Teil 2",
-                "Termine":["28.01.16", "02.02.16"],
+                "Titel":"The Danish Girl",
+                "Termine":["28.04.16", "03.05.16"],
                 "Jahr":"2015",
-                "Genre":"Abenteuer, Sci-Fi",
-                "Regie": "Francis Lawrence",
-                "Laenge": "137 Minuten",
+                "Genre":"Drama, Biografie",
+                "Regie": "Tom Hooper",
+                "Laenge": "119 Minuten",
                 "Dateien": {
-                    "Ordner":"Ablage/Panem 4",
-                    "Poster":"poster.jpg",
+                    "Ordner":"Ablage/danishgirl",
+                    "Poster":"Plakatmotiv/THE DANISH GIRL_Hauptplakat_RGB_A4.jpg",
+                    "Text":"Kurzinhalt/kurztext.txt",
+                    "Screenshot1":"Bilder/VF_DanishGirl3_A4.jpg",
+                    "Screenshot2":"Bilder/VF_DanishGirl4_A4.jpg",
+                    "Screenshot3":"Bilder/VF_DanishGirl1_A4.jpg"
+                }
+            },
+            {
+                "Titel":"The Hateful 8",
+                "Termine":["12.05.16", "17.05.16"],
+                "Jahr":"2015",
+                "Genre":"Western, Drama, Thriller",
+                "Regie": "Quentin Tarantino",
+                "Laenge": "168 Minuten",
+                "Dateien": {
+                    "Ordner":"Ablage/hateful8",
+                    "Poster":"hateful8.jpg",
                     "Text":"kurztext.txt",
-                    "Screenshot1":"screen1.png",
-                    "Screenshot2":"screen2.jpg",
-                    "Screenshot3":"screen3.png"
+                    "Screenshot1":"Bilder/Tim-Roth-Kurt-Russel-og-Jennifer-Jason-Leigh-i-The-Hateful-Eight.jpeg",
+                    "Screenshot2":"Bilder/Hateful-8-LST179871.jpg",
+                    "Screenshot3":"Bilder/Hateful8_promo-1024x520.jpeg"
                 }
             },
             {
-                "Titel":"Man lernt nie aus",
-                "Termine":["04.02.16", "09.02.16"],
-                "Jahr":"2015",
-                "Genre":"Komödie",
-                "Regie": "Nancy Meyers",
-                "Laenge": "121 Minuten",
+                "Titel":"Deadpool (OV)",
+                "Termine":["19.05.16", "24.05.16"],
+                "Jahr":"2016",
+                "Genre":"Action, Adventure, Comedy",
+                "Regie": "Tim Miller",
+                "Laenge": "108 Minutes",
                 "Dateien": {
-                    "Ordner":"Ablage/Man lernt nie aus",
-                    "Poster":"poster_lg01.jpg",
+                    "Ordner":"Ablage/deadpool",
+                    "Poster":"Plakatmotiv/Deadpool_Poster_CampC_IMAX_SundL_A4.jpg",
+                    "Text":"Synopsis/kurztext.txt",
+                    "Screenshot1":"Bilder/DF-26953_A4.jpg",
+                    "Screenshot2":"Bilder/DF-09376_A4.jpg",
+                    "Screenshot3":"Bilder/DF-08420_A4.jpg"
+                }
+            },
+            {
+                "Titel":"Colonia Dignidad - Es gibt kein Zurück",
+                "Termine":["26.05.16", "31.05.16"],
+                "Jahr":"2015",
+                "Genre":"Drama, Historie, Thriller",
+                "Regie": "Florian Gallenberger",
+                "Laenge": "110 Minuten",
+                "Dateien": {
+                    "Ordner":"Ablage/coloniadignidad",
+                    "Poster":"Plakatmotiv/colonia dignidad_plakat_A4_300dpi_A4.jpg",
                     "Text":"kurztext.txt",
-                    "Screenshot1":"screen1.jpg",
-                    "Screenshot2":"screen2.jpg",
-                    "Screenshot3":"screen3.jpg"
+                    "Screenshot1":"Bilder/1225996_Colonia.jpg",
+                    "Screenshot2":"Bilder/6082831_colonia-2015-movie-trailer-emma-watson_c759e749_m.jpg",
+                    "Screenshot3":"Bilder/maxresdefault.jpg"
                 }
             },
             {
-                "Titel":"Alles steht Kopf",
-                "Termine":["11.02.16", "16.02.16"],
+                "Titel":"The Big Short",
+                "Termine":["02.06.16", "07.06.16"],
                 "Jahr":"2015",
-                "Genre":"Animation, Komödie",
-                "Regie": "Pete Docter",
-                "Laenge": "95 Minuten",
+                "Genre":"Drama, Komödie, Biografie",
+                "Regie": "Adam McKay",
+                "Laenge": "131 Minuten",
                 "Dateien": {
-                    "Ordner":"Ablage/Alles steht Kopf",
-                    "Poster":"Hauptplakat.jpg",
-                    "Text":"text/kurztext.txt",
-                    "Screenshot1":"screens/Inside-Out-First-Look-RGB-d150_20mpub.pub16.101.jpg",
-                    "Screenshot2":"screens/inside-out-194827_1_d105_223pub_pub16_293_R1_CMYK.jpg",
-                    "Screenshot3":"screens/Inside-Out-CMYK-194252_1_d250_82cQpub2_pub16_207_R1.jpg_rgb.jpg"
+                    "Ordner":"Ablage/bigshort",
+                    "Poster":"bigshort.jpg",
+                    "Text":"kurztext.txt",
+                    "Screenshot1":"Bilder/152035.jpg-r_640_600-b_1_D6D6D6-f_jpg-q_x-xxyxx.jpg",
+                    "Screenshot2":"Bilder/13185270e37c64a0f579f1f28d6fb5c5f3ebac54.jpg",
+                    "Screenshot3":"Bilder/bigshort-xlarge.jpg"
+                }
+            },
+            {
+                "Titel":"The Revenant - Der Rückkehrer",
+                "Termine":["09.06.16", "14.06.16"],
+                "Jahr":"2015",
+                "Genre":"Western, Abenteuer",
+                "Regie": "Alejandro González Iñárritu",
+                "Laenge": "156 Minuten",
+                "Dateien": {
+                    "Ordner":"Ablage/revenant",
+                    "Poster":"Plakatmotiv/TheRevenant_Poster_CampB-Rev-Leo_Start_06JANUAR_GoldenGlobe_A4.jpg",
+                    "Text":"Synopsis/kurztext.txt",
+                    "Screenshot1":"Bilder/DF-17846_A4.jpg",
+                    "Screenshot2":"Bilder/DF-20640_A4.jpg",
+                    "Screenshot3":"Bilder/DF-24350_A4.jpg"
+                }
+            },
+            {
+                "Titel":"Der geilste Tag",
+                "Termine":["23.06.16", "28.06.16"],
+                "Jahr":"2016",
+                "Genre":"Komödie, Drama",
+                "Regie": "Florian David Fitz",
+                "Laenge": "113 Minuten",
+                "Dateien": {
+                    "Ordner":"Ablage/geilstetag",
+                    "Poster":"Bilder/DE Hauptplakat DGT.jpg",
+                    "Text":"kurztext.txt",
+                    "Screenshot1":"Bilder/de pub 1864 DGT.jpg",
+                    "Screenshot2":"Bilder/de pub 0857 DGT.jpg",
+                    "Screenshot3":"Bilder/de pub 7755 DGT.jpg"
+                }
+            },
+            {
+                "Titel":"Spotlight",
+                "Termine":["30.06.16", "05.07.16"],
+                "Jahr":"2015",
+                "Genre":"Drama, Thriller",
+                "Regie": "Tom McCarthy",
+                "Laenge": "128 Minuten",
+                "Dateien": {
+                    "Ordner":"Ablage/spotlight",
+                    "Poster":"spotlight.jpg",
+                    "Text":"kurztext.txt",
+                    "Screenshot1":"Bilder/still-of-michael-keaton,-brian-darcy-james,-mark-ruffalo-and-rachel-mcadams-in-spotlight-(2015)-large-picture.jpg",
+                    "Screenshot2":"Bilder/still-of-stanley-tucci-and-mark-ruffalo-in-spotlight-(2015).jpg",
+                    "Screenshot3":"Bilder/spotlight-mv-16.jpg"
+                }
+            },
+            {
+                "Titel":"The Huntsman & the Ice Queen",
+                "Termine":["07.07.16", "12.07.16"],
+                "Jahr":"2016",
+                "Genre":"Action, Abenteuer, Fantasy",
+                "Regie": "Cedric Nicolas-Troyan",
+                "Laenge": "114 Minuten",
+                "Dateien": {
+                    "Ordner":"Ablage/huntsman",
+                    "Poster":"Plakatmotiv/HuntsmanIceQueen_Hauptplakat_4C_A4.jpg",
+                    "Text":"Kurzinhalt/kurztext.txt",
+                    "Screenshot1":"Bilder/VFs-Huntsman-1_A4.jpg",
+                    "Screenshot2":"Bilder/VFs-Huntsman-2_A4.jpg",
+                    "Screenshot3":"Bilder/VFs-Huntsman-4_A4.jpg"
+                }
+            },
+            {
+                "Titel":"Zoomania",
+                "Termine":["14.07.16", "19.07.16"],
+                "Jahr":"2016",
+                "Genre":"Animation, Familie, Komödie",
+                "Regie": "Byron Howard, Rich Moore",
+                "Laenge": "108 Minuten",
+                "Dateien": {
+                    "Ordner":"Ablage/zoomania",
+                    "Poster":"plakat/77747_Zoomania_HP_A3_rz01_rgb_72dpi.jpg",
+                    "Text":"texte/kurztext.txt",
+                    "Screenshot1":"bilder/zootopia-DMV_Trailer.jpg",
+                    "Screenshot2":"bilder/zootopia-180_35.356.jpg",
+                    "Screenshot3":"bilder/zootopia-480.0_029.00_0092.jpg"
                 }
             }
         ]
