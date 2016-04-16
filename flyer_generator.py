@@ -168,7 +168,6 @@ def title_to_filepath(titel, output_dir):
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    # TODO Generate (compressed) PDFs?
     # TODO Overview flyer
     parser.add_argument('-f', '--force', help=u'Bestehende Flyer überschreiben', action='store_true')
     parser.add_argument('-o', '--output', help='Ausgabe Ordner', action='store', default='woechentliche Flyer')
