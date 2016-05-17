@@ -121,14 +121,14 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="152.81162"
-     inkscape:cy="339.52438"
+     inkscape:cx="174.39852"
+     inkscape:cy="283.89394"
      inkscape:document-units="px"
      inkscape:current-layer="layer1-1"
      showgrid="false"
-     inkscape:window-width="1280"
-     inkscape:window-height="1000"
-     inkscape:window-x="1920"
+     inkscape:window-width="1859"
+     inkscape:window-height="1056"
+     inkscape:window-x="61"
      inkscape:window-y="24"
      inkscape:window-maximized="1"
      fit-margin-top="0"
@@ -165,7 +165,7 @@
          style="fill:url(#linearGradient6401);fill-opacity:1;fill-rule:evenodd;stroke:none"
          inkscape:label="#rect3018-3-5-2" />
       <g
-         transform="matrix(0.11549788,0,0,0.1165384,-1637.579,3275.5848)"
+         transform="matrix(0.11549788,0,0,0.1165384,-1637.5783,3275.5848)"
          id="g3343-5-8">
         <g
            id="g3177">
@@ -203,7 +203,7 @@
             <flowRoot
                xml:space="preserve"
                id="flowRoot3040-4-3"
-               style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
+               style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
                transform="translate(4512.171,1131.2399)"><flowRegion
                  id="flowRegion3042-4-7"><rect
                    id="rect3044-4-1"
@@ -212,10 +212,10 @@
                    x="-7154.2856"
                    y="-4216.209" /></flowRegion><flowPara
                  id="flowPara3046-2-0"
-                 style="font-size:500px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Broadway BT;-inkscape-font-specification:Broadway BT">SchunterKino</flowPara></flowRoot>            <flowRoot
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:500px;font-family:'Broadway BT';-inkscape-font-specification:'Broadway BT'">SchunterKino</flowPara></flowRoot>            <flowRoot
                xml:space="preserve"
                id="flowRoot3075-9-0"
-               style="font-size:40px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:17.5px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bangle;-inkscape-font-specification:Bangle Bold"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:40px;line-height:125%;font-family:Bangle;-inkscape-font-specification:'Bangle Bold';letter-spacing:17.5px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
                transform="matrix(0.96059601,0,0,0.96059601,2817.7051,684.24519)"><flowRegion
                  id="flowRegion3077-3-8"><rect
                    id="rect3079-0-3"
@@ -223,14 +223,14 @@
                    height="634.28571"
                    x="-4582.8569"
                    y="-3427.6377"
-                   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;letter-spacing:17.5px;font-family:Bangle;-inkscape-font-specification:Bangle Bold" /></flowRegion><flowPara
+                   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Bangle;-inkscape-font-specification:'Bangle Bold';letter-spacing:17.5px" /></flowRegion><flowPara
                  id="flowPara3081-77-45"
-                 style="font-size:200px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;letter-spacing:17.5px;font-family:Bangle;-inkscape-font-specification:Bangle Bold">Studentischer Filmclub <flowSpan
+                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:200px;font-family:Bangle;-inkscape-font-specification:'Bangle Bold';letter-spacing:17.5px">Studentischer Filmclub <flowSpan
    id="flowSpan4803-8-0"
    style="letter-spacing:10.41020393px">e.V.</flowSpan></flowPara></flowRoot>            <flowRoot
                xml:space="preserve"
                id="flowRoot3075-7-7-1"
-               style="font-size:174.87002563px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:17.5px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bangle;-inkscape-font-specification:Bangle Bold"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:174.87002563px;line-height:125%;font-family:Bangle;-inkscape-font-specification:'Bangle Bold';letter-spacing:17.5px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
                transform="matrix(0.69573981,0,0,0.54426149,1604.0678,-548.74872)"><flowRegion
                  id="flowRegion3077-1-3-4"><rect
                    id="rect3079-1-03-5"
@@ -238,12 +238,12 @@
                    height="294.87445"
                    x="-4582.8569"
                    y="-3427.6377"
-                   style="font-size:174.87002563px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;letter-spacing:17.5px;font-family:Bangle;-inkscape-font-specification:Bangle Bold" /></flowRegion><flowPara
+                   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:174.87002563px;font-family:Bangle;-inkscape-font-specification:'Bangle Bold';letter-spacing:17.5px" /></flowRegion><flowPara
                  id="flowPara3081-5-8-6"
-                 style="font-size:174.87002563px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;letter-spacing:17.5px;font-family:Bangle;-inkscape-font-specification:Bangle Bold">STUDENTENWOHNHEIM AN DER SCHUNTER</flowPara></flowRoot>            <flowRoot
+                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:174.87002563px;font-family:Bangle;-inkscape-font-specification:'Bangle Bold';letter-spacing:17.5px">STUDENTENWOHNHEIM AN DER SCHUNTER</flowPara></flowRoot>            <flowRoot
                xml:space="preserve"
                id="flowRoot3075-7-4-2-2"
-               style="font-size:174.87002563px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;line-height:125%;letter-spacing:18.51890182px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bangle;-inkscape-font-specification:Bangle Bold"
+               style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:174.87002563px;line-height:125%;font-family:Bangle;-inkscape-font-specification:'Bangle Bold';letter-spacing:18.51890182px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
                transform="matrix(0.61638496,0,0,0.48218401,1242.4118,-650.19225)"><flowRegion
                  id="flowRegion3077-1-2-5-0"><rect
                    id="rect3079-1-3-2-3"
@@ -251,9 +251,9 @@
                    height="472.53912"
                    x="-4582.8569"
                    y="-3427.6377"
-                   style="font-size:174.87002563px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;letter-spacing:18.51890182px;font-family:Bangle;-inkscape-font-specification:Bangle Bold" /></flowRegion><flowPara
+                   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:174.87002563px;font-family:Bangle;-inkscape-font-specification:'Bangle Bold';letter-spacing:18.51890182px" /></flowRegion><flowPara
                  id="flowPara3081-5-2-0-5"
-                 style="font-size:148.1512146px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;letter-spacing:0.18518902px;font-family:Bangle;-inkscape-font-specification:Bangle Bold">Bienroder Weg 54     38108 Braunschweig     www.schunterkino.de </flowPara></flowRoot>          </g>
+                 style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:148.1512146px;font-family:Bangle;-inkscape-font-specification:'Bangle Bold';letter-spacing:0.18518902px">Bienroder Weg 54     38108 Braunschweig     www.schunterkino.de </flowPara></flowRoot>          </g>
         </g>
       </g>
       <text
@@ -281,8 +281,8 @@
            x="-1343.2478"
            y="3544.4841" /></text>
       <flowRoot
-         transform="matrix(0.115625,0,0,0.11666667,-1796.0166,2915.6558)"
-         style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans;-inkscape-font-specification:Sans"
+         transform="matrix(0.115625,0,0,0.11666667,-1801.0423,2915.6558)"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:Sans;-inkscape-font-specification:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
          id="flowRoot3330-7"
          xml:space="preserve"><flowRegion
            id="flowRegion3332-2"><rect
@@ -292,7 +292,7 @@
              width="1760"
              id="rect3334-1"
              style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Sans;-inkscape-font-specification:Sans" /></flowRegion><flowPara
-           style="font-size:90px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Sans;-inkscape-font-specification:Sans"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:90px;font-family:Sans;-inkscape-font-specification:Sans"
            id="flowPara3336-4">www.schunterkino.de</flowPara></flowRoot>      <image
          y="3092.0923"
          x="-1627.106"
@@ -304,8 +304,8 @@
       <flowRoot
          xml:space="preserve"
          id="flowRoot3158"
-         style="font-size:40px;font-style:normal;font-weight:normal;line-height:110.00000238%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-         transform="matrix(0.64712682,0,0,0.65295681,-1933.0876,2863.006)"><flowRegion
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:110.00000238%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+         transform="matrix(0.64712682,0,0,0.65295681,-1933.0914,2863.006)"><flowRegion
            id="flowRegion3160"><rect
              id="rect3162"
              width="743.47217"
@@ -314,7 +314,7 @@
              y="249.29091"
              style="line-height:110.00000238%" /></flowRegion><flowPara
            id="flowPara3170"
-           style="font-size:30px;font-style:normal;text-align:center;line-height:117.99999475%;text-anchor:middle;-inkscape-font-specification:Sans">präsentiert:</flowPara></flowRoot>      <flowRoot
+           style="font-style:normal;font-size:30px;line-height:117.99999475%;-inkscape-font-specification:Sans;text-align:center;text-anchor:middle">präsentiert:</flowPara></flowRoot>      <flowRoot
          xml:space="preserve"
          id="flowRoot3188"
          style="font-size:59.99674225px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
@@ -348,8 +348,8 @@
            style="font-size:64.61187744px;font-weight:bold;text-align:center;text-anchor:middle;-inkscape-font-specification:Sans Bold">Beginn: 20:30 Uhr</flowPara></flowRoot>      <flowRoot
          xml:space="preserve"
          id="flowRoot123213123"
-         style="font-size:92.30268097px;font-style:normal;font-weight:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-         transform="matrix(0.21570895,0,0,0.21765228,-1758.6132,3104.8773)"
+         style="font-style:normal;font-weight:normal;font-size:92.30268097px;line-height:125%;font-family:Sans;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none"
+         transform="matrix(0.21570895,0,0,0.21765228,-1757.3805,3104.8773)"
          inkscape:label="#flowRoot3236"><flowRegion
            id="flowRegion3238"><rect
              id="rect3240"
@@ -359,7 +359,7 @@
              y="-227.63782"
              style="font-size:92.30268097px;text-align:center;text-anchor:middle" /></flowRegion><flowPara
            id="titel"
-           style="font-size:92.30268097px;font-weight:bold;text-align:center;text-anchor:middle;-inkscape-font-specification:Sans Bold">The Danish Girl</flowPara></flowRoot>      <g
+           style="font-weight:bold;font-size:92.30268097px;-inkscape-font-specification:'Sans Bold';text-align:center;text-anchor:middle">The Danish Girl</flowPara></flowRoot>      <g
          transform="matrix(0.22166228,0,0,0.22365923,-1915.1609,3423.5438)"
          id="g4552">
         <path
@@ -602,16 +602,16 @@
            style="font-size:60px">Filmpass*: 2,00€</flowPara></flowRoot>      <flowRoot
          xml:space="preserve"
          id="flowRoot4356"
-         style="font-size:50px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-         transform="matrix(0.21570895,0,0,0.21765228,-1795.9955,3171.2483)"><flowRegion
+         style="font-style:normal;font-weight:normal;font-size:46.15134048px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+         transform="matrix(0.21570895,0,0,0.21765228,-1801.6452,3171.2483)"><flowRegion
            id="flowRegion4358"><rect
              id="rect4360"
              width="2173.4099"
              height="244.36263"
              x="191.42857"
              y="1895.2194"
-             style="font-size:50px" /></flowRegion><flowPara
-           id="flowPara4364">Zu erreichen sind wir mit den Buslinien 416 und 436 </flowPara><flowPara
+             style="font-size:46.15134048px" /></flowRegion><flowPara
+           id="flowPara4364">Zu erreichen sind wir mit den Buslinien 416, 426 und 436 </flowPara><flowPara
            id="flowPara4380">Haltestelle „Michelfelderplatz“</flowPara><flowPara
            id="flowPara4366" /><flowPara
            id="flowPara4368" /></flowRoot>      <text
@@ -636,8 +636,8 @@
       <flowRoot
          xml:space="preserve"
          id="flowRoot3172"
-         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Sans"
-         transform="matrix(0.21570895,0,0,0.21765228,-1919.2804,2967.0929)"><flowRegion
+         style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:Sans;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+         transform="matrix(0.21570895,0,0,0.21765228,-1912.2818,2967.0929)"><flowRegion
            id="flowRegion3174"><rect
              id="rect3176"
              width="652"
