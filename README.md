@@ -1,5 +1,4 @@
 # Flyer Tools
-
 A collection of scripts to generate the SchunterKino flyers.
 
 ## Flyer Generator
@@ -32,9 +31,9 @@ Overwriting existing files:
 ### Usage
 This will create the file "Flyer - Druck.pdf":
 ```sh
-./druck_version Flyer.svg
+./print_version.sh Flyer.svg
 ```
 To create the PDFs for all flyers in a folder:
 ```sh
-./druck_version.sh flyers/*.svg
+./print_version.sh flyers/*.svg
 ```
