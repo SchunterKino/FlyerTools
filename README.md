@@ -32,9 +32,9 @@ Overwriting existing files:
 ### Usage
 This will create the file "Flyer - Druck.pdf":
 ```sh
-    ./druck_version Flyer.svg
+./druck_version Flyer.svg
 ```
 To create the PDFs for all flyers in a folder:
 ```sh
-for f in flyers/*.svg; do ./druck_version.sh "$f"; done
+./druck_version.sh flyers/*.svg
 ```
