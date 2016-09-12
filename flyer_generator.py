@@ -168,7 +168,6 @@ def title_to_filepath(titel, output_dir):
 
 def parse_args():
     parser = argparse.ArgumentParser()
-    # TODO Overview flyer
     parser.add_argument('-f', '--force', help=u'Bestehende Flyer überschreiben', action='store_true')
     parser.add_argument('-o', '--output', help='Ausgabe Ordner', action='store', default='woechentliche Flyer')
     parser.add_argument('-t', '--template', help='Vorlage Datei', action='store', default='vorlage.svg')
@@ -187,7 +186,7 @@ if __name__ == '__main__':
     for index, movie in enumerate(movies):
         filepath = title_to_filepath(movie['Titel'], args.output)
 
-        # Skip existing flyers
+        # skip existing flyers
         if not args.force and os.path.isfile(filepath):
             print 'Flyer existiert bereits:\t' + os.path.basename(filepath)
             continue
