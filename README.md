@@ -8,19 +8,19 @@ Generates multiple SVG flyers by transforming a template. Resources (paths to im
 ### Usage
 Simple:
 ```sh
-    python flyer_generator.py program.json
+python flyer_generator.py program.json
 ```
 Choosing a different template file:
 ```sh
-    python flyer_generator.py -t template.svg program.json
+python flyer_generator.py -t template.svg program.json
 ```
 Changing the output directory:
 ```sh
-    python flyer_generator.py -o flyers program.json
+python flyer_generator.py -o flyers program.json
 ```
 Overwriting existing files:
 ```sh
-    python flyer_generator.py -f program.json
+python flyer_generator.py -f program.json
 ```
 
 
@@ -51,7 +51,7 @@ python program_generator.py program.json
 ```
 Choosing a different template file:
 ```sh
-    python program_generator.py -t template_overview.svg program.json
+python program_generator.py -t template_overview.svg program.json
 ```
 Changing the output file:
 ```sh
@@ -59,5 +59,5 @@ python program_generator.py -o program.svg program.json
 ```
 Overwriting existing files:
 ```sh
-    python program_generator.py -f program.json
+python program_generator.py -f program.json
 ```
