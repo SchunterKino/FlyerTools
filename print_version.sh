@@ -12,7 +12,7 @@ for FILE in "$@"; do
     SVGFILE="${FILE%.*} - Druck.svg"
 
     # change width to A4 landscape
-    sed 's/width=\"524.40942\"/width=\"1052.36\"/' "$FILE" > "$SVGFILE"
+    sed 's/width=\"148mm\"/width=\"297mm\"/' "$FILE" > "$SVGFILE"
     # two page layout without background
     inkscape -f="$SVGFILE" --select=bg_gradient --verb=EditDelete \
                            --verb=EditSelectAll --verb=SelectionGroup --verb=AlignHorizontalLeft \
