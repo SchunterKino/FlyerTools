@@ -163,7 +163,7 @@ if __name__ == '__main__':
         document = transformation.apply(template)
 
         # create output directory if not exists
-        if not os.path.exists(outdir):
+        if outdir and not os.path.exists(outdir):
             os.makedirs(outdir)
 
         # save to file
