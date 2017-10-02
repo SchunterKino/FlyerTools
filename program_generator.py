@@ -9,7 +9,6 @@ import argparse
 import json
 
 # dates
-import locale
 import dateutil.parser
 
 # image encoding and compression
@@ -20,8 +19,6 @@ from cStringIO import StringIO
 # xml parser
 from lxml import etree
 import copy
-
-locale.setlocale(locale.LC_ALL, 'de_DE.UTF-8')
 
 
 class ProgramTransformation(object):
