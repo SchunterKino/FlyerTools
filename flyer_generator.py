@@ -15,7 +15,10 @@ import dateutil.parser
 # image encoding and compression
 import base64
 from PIL import Image
-from cStringIO import StringIO
+try:
+    from cStringIO import StringIO as BytesIO
+except ImportError:
+    from io import BytesIO
 
 # xml parser
 from lxml import etree
@@ -54,8 +57,8 @@ class FlyerTransformation(object):
 
         # text
         textfile_path = os.path.join(movie_dir, self.movie['Dateien']['Text'])
-        with open(textfile_path) as text_file:
-            text = text_file.read().decode('utf-8')
+        with open(textfile_path, encoding='utf-8') as text_file:
+            text = text_file.read()
         self.getElementById('kurztext').text = text
 
         # info (year, director, ...)
@@ -139,7 +142,7 @@ def encode_image(image_path):
     compressed_image = compress(image_path)
 
     # images are embed as base64 in svg files
-    return 'data:image/jpeg;base64,' + base64.encodestring(compressed_image)
+    return b'data:image/jpeg;base64,' + base64.encodestring(compressed_image)
 
 
 def compress(image_path):
@@ -152,7 +155,7 @@ def compress(image_path):
         image = image.convert("RGB")
 
     # store in temporary memory file
-    temp_file = StringIO()
+    temp_file = BytesIO()
     image.save(temp_file, 'JPEG', optimize=True, quality=90)
 
     # rewind and return image content as string
@@ -162,7 +165,7 @@ def compress(image_path):
 
 def title_to_filepath(titel, output_dir):
     # filter special chars
-    filename = re.sub('[^\w\-_\. ]', '_', titel)
+    filename = re.sub(r'[^\w\-_\. ]', '_', titel)
     return os.path.join(output_dir, filename + '.svg')
 
 
@@ -171,15 +174,15 @@ def parse_args():
     parser.add_argument('-f', '--force', help=u'Bestehende Flyer überschreiben', action='store_true')
     parser.add_argument('-o', '--output', help='Ausgabe Ordner', action='store', default='woechentliche Flyer')
     parser.add_argument('-t', '--template', help='Vorlage Datei', action='store', default='vorlage.svg')
-    parser.add_argument('Program', type=argparse.FileType('r'), help='JSON Datei mit dem aktuellen Programm')
+    parser.add_argument('json', metavar='program.json', type=argparse.FileType('r', encoding='utf-8'), help='JSON Datei mit dem aktuellen Programm')
     return parser.parse_args()
 
 
 if __name__ == '__main__':
     args = parse_args()
     template = args.template
-    resources_dir = os.path.dirname(args.Program.name)  # resources are relative to the program file
-    program = json.load(args.Program)['Programm']
+    resources_dir = os.path.dirname(args.json.name)  # resources are relative to the program file
+    program = json.load(args.json)['Programm']
 
     # generate flyers
     movies = program['Filme']
@@ -188,22 +191,25 @@ if __name__ == '__main__':
 
         # skip existing flyers
         if not args.force and os.path.isfile(filepath):
-            print 'Flyer existiert bereits:\t' + os.path.basename(filepath)
+            print('Flyer existiert bereits:\t' + os.path.basename(filepath))
             continue
 
-        # collect next 3 movies (or None) for preview
-        next_movies = movies[index+1:index+4]
-        next_movies = next_movies + [None]*(3 - len(next_movies))
+        try:
+            # collect next 3 movies (or None) for preview
+            next_movies = movies[index+1:index+4]
+            next_movies = next_movies + [None]*(3 - len(next_movies))
 
-        # generate
-        print 'Generiere Flyer:\t' + os.path.basename(filepath)
-        transformation = FlyerTransformation(resources_dir, program, movie, next_movies)
-        document = transformation.apply(template)
+            # generate
+            print('Generiere Flyer:\t' + os.path.basename(filepath))
+            transformation = FlyerTransformation(resources_dir, program, movie, next_movies)
+            document = transformation.apply(template)
 
-        # create output directory if not exists
-        if not os.path.exists(args.output):
-            os.makedirs(args.output)
+            # create output directory if not exists
+            if not os.path.exists(args.output):
+                os.makedirs(args.output)
 
-        # save to file
-        with open(filepath, 'w') as output_file:
-            document.write(output_file)
+            # save to file
+            with open(filepath, 'wb') as output_file:
+                document.write(output_file, encoding='utf-8')
+        except Exception as e:
+            print('Fehler bei Flyer {}:'.format(filepath), repr(e))

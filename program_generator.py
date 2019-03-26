@@ -14,7 +14,10 @@ import dateutil.parser
 # image encoding and compression
 import base64
 from PIL import Image
-from cStringIO import StringIO
+try:
+    from cStringIO import StringIO as BytesIO
+except ImportError:
+    from io import BytesIO
 
 # xml parser
 from lxml import etree
@@ -33,7 +36,7 @@ class ProgramTransformation(object):
         stream.close()
 
     def getElementById(self, id):
-        path = '//*[@id="%s"]' % id
+        path = '//*[@id="{}"]'.format(id)
         el_list = self.document.xpath(path)
         if el_list:
             return el_list[0]
@@ -93,15 +96,15 @@ class ProgramTransformation(object):
                 x = x_left
             else:
                 x = x_right
-            y_index = index / 2  # integer division -> 0,0,1,1,2,2,3,3,...
+            y_index = index // 2  # integer division -> 0,0,1,1,2,2,3,3,...
             y = y_base + height * y_index
             # append poster
             poster = copy.copy(poster_template)
             movie_dir = os.path.join(self.resources_dir, movie['Dateien']['Ordner'])
             image = os.path.join(movie_dir, movie['Dateien']['Poster'])
             poster.set('{http://www.w3.org/1999/xlink}href', encode_image(image))
-            poster.attrib['x'] = unicode(x)
-            poster.attrib['y'] = unicode(y)
+            poster.attrib['x'] = str(x)
+            poster.attrib['y'] = str(y)
             page.append(poster)
 
         return self.document
@@ -112,7 +115,7 @@ def encode_image(image_path):
     compressed_image = compress(image_path)
 
     # images are embed as base64 in svg files
-    return 'data:image/jpeg;base64,' + base64.encodestring(compressed_image)
+    return b'data:image/jpeg;base64,' + base64.encodestring(compressed_image)
 
 
 def compress(image_path):
@@ -125,7 +128,7 @@ def compress(image_path):
         image = image.convert("RGB")
 
     # store in temporary memory file
-    temp_file = StringIO()
+    temp_file = BytesIO()
     image.save(temp_file, 'JPEG', optimize=True, quality=90)
 
     # rewind and return image content as string
@@ -138,31 +141,35 @@ def parse_args():
     parser.add_argument('-f', '--force', help=u'Bestehenden Flyer überschreiben', action='store_true')
     parser.add_argument('-o', '--output', help='Ausgabe Datei', action='store', default='Programm.svg')
     parser.add_argument('-t', '--template', help='Vorlage Datei', action='store', default='vorlage_programm.svg')
-    parser.add_argument('Program', type=argparse.FileType('r'), help='JSON Datei mit dem aktuellen Programm')
+    parser.add_argument('json', metavar='program.json', type=argparse.FileType('r', encoding='utf-8'), help='JSON Datei mit dem aktuellen Programm')
     return parser.parse_args()
 
 
 if __name__ == '__main__':
     args = parse_args()
     template = args.template
-    resources_dir = os.path.dirname(args.Program.name)  # resources are relative to the program file
-    program = json.load(args.Program)['Programm']
+    resources_dir = os.path.dirname(args.json.name)  # resources are relative to the program file
+    program = json.load(args.json)['Programm']
     outfile = args.output
     outdir = os.path.dirname(outfile)
 
     if not args.force and os.path.isfile(outfile):
         # skip existing flyer
-        print 'Flyer existiert bereits:\t' + os.path.basename(outfile)
+        print('Flyer existiert bereits:\t' + os.path.basename(outfile))
     else:
         # generate flyer
-        print 'Generiere Flyer:\t' + os.path.basename(outfile)
-        transformation = ProgramTransformation(resources_dir, program)
-        document = transformation.apply(template)
+        print('Generiere Flyer:\t' + os.path.basename(outfile))
+        try:
+            transformation = ProgramTransformation(resources_dir, program)
+            document = transformation.apply(template)
+        
+            # create output directory if not exists
+            if outdir and not os.path.exists(outdir):
+                os.makedirs(outdir)
 
-        # create output directory if not exists
-        if outdir and not os.path.exists(outdir):
-            os.makedirs(outdir)
+            # save to file
+            with open(outfile, 'wb') as f:
+                document.write(f, encoding='utf-8')
 
-        # save to file
-        with open(outfile, 'w') as f:
-            document.write(f)
+        except Exception as e:
+            print('Fehler:', repr(e))
