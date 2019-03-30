@@ -1,6 +1,11 @@
 # Flyer Tools
 A collection of scripts to generate the SchunterKino flyers.
 
+## Dependencies
+Install Python dependencies once:
+```sh
+pip install -r requirements.txt
+```
 
 ## Flyer Generator
 Generates multiple SVG flyers by transforming a template. Resources (paths to images, texts, etc.) are given as a JSON file.
