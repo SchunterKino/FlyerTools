@@ -35,7 +35,7 @@ class FlyerTransformation(object):
         self.next_movies = next_movies
 
     def parse(self, file):
-        stream = open(file, 'r')
+        stream = open(file, 'r', encoding='utf-8')
         self.document = etree.parse(stream)
         stream.close()
 

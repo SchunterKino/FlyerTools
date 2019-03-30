@@ -31,7 +31,7 @@ class ProgramTransformation(object):
         self.program = program
 
     def parse(self, file):
-        stream = open(file, 'r')
+        stream = open(file, 'r', encoding='utf-8')
         self.document = etree.parse(stream)
         stream.close()
 
